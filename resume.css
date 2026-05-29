@@ -1,0 +1,235 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* Navbar */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#111827;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:30px;
+  color:#38bdf8;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(to right,#9333ea,#ec4899);
+}
+
+.hero-content h1{
+  font-size:70px;
+  margin:10px 0;
+}
+
+.hero-content p{
+  font-size:24px;
+  margin-bottom:20px;
+}
+
+.hero button{
+  padding:15px 30px;
+  border:none;
+  border-radius:30px;
+  background:white;
+  color:#9333ea;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  transform:scale(1.1);
+}
+
+/* Sections */
+
+section{
+  padding:80px 10%;
+}
+
+h2{
+  font-size:40px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+/* About */
+
+.about p{
+  text-align:center;
+  font-size:20px;
+  line-height:1.8;
+}
+
+/* Skills */
+
+.skill p{
+  margin:15px 0;
+}
+
+.progress{
+  background:#1e293b;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-bar{
+  height:15px;
+  border-radius:20px;
+}
+
+.html{
+  width:95%;
+  background:#f97316;
+}
+
+.css{
+  width:90%;
+  background:#3b82f6;
+}
+
+.js{
+  width:85%;
+  background:#eab308;
+}
+
+.react{
+  width:80%;
+  background:#06b6d4;
+}
+
+.python{
+    width:89%;
+    background-color:pink ;
+}
+.java{
+    width:70%;
+    background-color: #ec4899;
+}
+.leadership{
+    width:95%;
+    background-color: #485eec;
+}
+.PowerBI{
+    width:75%;
+    background-color: rgba(252, 97, 99, 0.688);
+}
+
+/* Projects */
+
+.project-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#9333ea;
+}
+
+/* Collaborate */
+
+.collaborate{
+  background:linear-gradient(to right,#06b6d4,#9333ea);
+  text-align:center;
+}
+
+/* Contact */
+
+.contact form{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+  margin:10px 0;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+}
+
+.contact button{
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  background:#9333ea;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+  background:#111827;
+  text-align:center;
+  padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+  }
+
+  .hero-content h1{
+    font-size:45px;
+  }
+
+}
